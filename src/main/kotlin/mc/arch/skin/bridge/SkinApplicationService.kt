@@ -6,10 +6,10 @@ import gg.scala.flavor.service.Configure
 import gg.scala.flavor.service.Service
 import mc.arch.commons.communications.rpc.RPCContext
 import mc.arch.commons.communications.rpc.RPCHandler
-import mc.arch.skin.bridge.cache.CachedEaglerProfile
-import mc.arch.skin.bridge.rpc.NewSkinAvailableRequest
-import mc.arch.skin.bridge.rpc.SkinConversionRPC
-import mc.arch.skin.bridge.rpc.SkinConversionRequest
+import mc.arch.skin.cache.CachedEaglerProfile
+import mc.arch.skin.rpc.NewSkinAvailableRequest
+import mc.arch.skin.rpc.SkinConversionRPC
+import mc.arch.skin.rpc.SkinConversionRequest
 import me.lucko.helper.Events
 import me.lucko.helper.Schedulers
 import net.evilblock.cubed.serializers.Serializers
@@ -21,7 +21,7 @@ import org.bukkit.event.player.AsyncPlayerPreLoginEvent
  * @since 8/6/25
  */
 @Service
-object SkinApplicationService : RPCHandler<NewSkinAvailableRequest, Unit>
+object SkinApplicationService : RPCHandler<mc.arch.skin.bridge.rpc.NewSkinAvailableRequest, Unit>
 {
     private var shouldEnqueueConversions = false
     fun enqueueConversions()
@@ -32,7 +32,7 @@ object SkinApplicationService : RPCHandler<NewSkinAvailableRequest, Unit>
     @Configure
     fun configure()
     {
-        SkinConversionRPC.availableRPC.addHandler(this)
+        _root_ide_package_.mc.arch.skin.bridge.rpc.SkinConversionRPC.availableRPC.addHandler(this)
 
         Events
             .subscribe(AsyncPlayerPreLoginEvent::class.java)

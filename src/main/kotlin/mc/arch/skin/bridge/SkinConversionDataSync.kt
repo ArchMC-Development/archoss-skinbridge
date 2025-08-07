@@ -5,9 +5,8 @@ import gg.scala.commons.persist.datasync.DataSyncKeys
 import gg.scala.commons.persist.datasync.DataSyncService
 import gg.scala.flavor.service.Configure
 import gg.scala.flavor.service.Service
-import mc.arch.skin.bridge.SkinConversionQueue.Companion.generateTaskId
-import mc.arch.skin.bridge.rpc.SkinConversionRPC
-import mc.arch.skin.bridge.rpc.handler.SkinConversionHandler
+import mc.arch.skin.rpc.SkinConversionRPC
+import mc.arch.skin.rpc.handler.SkinConversionHandler
 import java.util.UUID
 import java.util.concurrent.CompletableFuture
 
@@ -64,7 +63,7 @@ object SkinConversionDataSync : DataSyncService<SkinConversionConfig>()
     fun submitTask(
         playerId: UUID,
         base64Data: String,
-        taskId: String = generateTaskId()
+        taskId: String = SkinConversionQueue.Companion.generateTaskId()
     ): CompletableFuture<TaskResult> = queue.submitTask(
         playerId,
         base64Data,

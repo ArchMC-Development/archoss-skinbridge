@@ -2,10 +2,10 @@ package mc.arch.skin.bridge.rpc.handler
 
 import mc.arch.commons.communications.rpc.RPCContext
 import mc.arch.commons.communications.rpc.RPCHandler
-import mc.arch.skin.bridge.SkinConversionDataSync
-import mc.arch.skin.bridge.rpc.NewSkinAvailableRequest
-import mc.arch.skin.bridge.rpc.SkinConversionRPC
-import mc.arch.skin.bridge.rpc.SkinConversionRequest
+import mc.arch.skin.SkinConversionDataSync
+import mc.arch.skin.rpc.NewSkinAvailableRequest
+import mc.arch.skin.rpc.SkinConversionRPC
+import mc.arch.skin.rpc.SkinConversionRequest
 
 /**
  * @author Subham

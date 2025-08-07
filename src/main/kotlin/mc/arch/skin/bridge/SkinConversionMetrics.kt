@@ -3,7 +3,6 @@ package mc.arch.skin.bridge
 import dev.cubxity.plugins.metrics.api.metric.collector.Collector
 import dev.cubxity.plugins.metrics.api.metric.collector.CollectorCollection
 import dev.cubxity.plugins.metrics.api.metric.data.GaugeMetric
-import dev.cubxity.plugins.metrics.api.metric.data.Metric
 import gg.scala.commons.metrics.Metrics
 import gg.scala.commons.metrics.TimeAverage
 import gg.scala.commons.metrics.Tracker

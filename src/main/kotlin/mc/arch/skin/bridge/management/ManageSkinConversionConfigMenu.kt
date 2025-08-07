@@ -5,8 +5,8 @@ import gg.scala.commons.configurable.editBoolean
 import gg.scala.commons.configurable.editDuration
 import gg.scala.commons.configurable.editInt
 import gg.scala.commons.configurable.editString
-import mc.arch.skin.bridge.SkinConversionConfig
-import mc.arch.skin.bridge.SkinConversionDataSync
+import mc.arch.skin.SkinConversionConfig
+import mc.arch.skin.SkinConversionDataSync
 import net.evilblock.cubed.menu.Button
 import net.evilblock.cubed.menu.Menu
 import org.bukkit.entity.Player
