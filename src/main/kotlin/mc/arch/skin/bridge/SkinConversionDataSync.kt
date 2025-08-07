@@ -5,8 +5,8 @@ import gg.scala.commons.persist.datasync.DataSyncKeys
 import gg.scala.commons.persist.datasync.DataSyncService
 import gg.scala.flavor.service.Configure
 import gg.scala.flavor.service.Service
-import mc.arch.skin.rpc.SkinConversionRPC
-import mc.arch.skin.rpc.handler.SkinConversionHandler
+import mc.arch.skin.bridge.rpc.SkinConversionRPC
+import mc.arch.skin.bridge.rpc.handler.SkinConversionHandler
 import java.util.UUID
 import java.util.concurrent.CompletableFuture
 

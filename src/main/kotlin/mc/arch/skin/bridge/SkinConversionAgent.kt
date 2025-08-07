@@ -1,9 +1,9 @@
 package mc.arch.skin.bridge
 
-import mc.arch.skin.cache.CacheKey
-import mc.arch.skin.cache.CacheProvider
-import mc.arch.skin.cache.CachedSkin
-import mc.arch.skin.cache.RedisCacheProvider
+import mc.arch.skin.bridge.cache.CacheKey
+import mc.arch.skin.bridge.cache.CacheProvider
+import mc.arch.skin.bridge.cache.CachedSkin
+import mc.arch.skin.bridge.cache.RedisCacheProvider
 import net.evilblock.cubed.serializers.Serializers
 import org.mineskin.Java11RequestHandler
 import org.mineskin.MineSkinClient
